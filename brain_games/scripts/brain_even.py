@@ -21,5 +21,5 @@ def main():
             return print('"' + answer + '"' + " is wrong answer ;(. Correct answer was \"yes\".\nLet's try again, " + name + "!")
         elif number % 2 != 0 and answer != 'no':
             return print('"' + answer + '"' + " is wrong answer ;(. Correct answer was \"no\".\nLet's try again, " + name + "!")
-    print('Congratulations, ' + name+ '!')
+    print('Congratulations, ' + name + '!')
 
