@@ -2,6 +2,7 @@ import prompt
 from random import randint
 from math import gcd
 
+
 def main():
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')

@@ -1,6 +1,7 @@
 import prompt
 from random import randint
 
+
 def main():
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
@@ -22,4 +23,3 @@ def main():
         elif number % 2 != 0 and answer != 'no':
             return print('"' + answer + '"' + " is wrong answer ;(. Correct answer was \"no\".\nLet's try again, " + name + "!")
     print('Congratulations, ' + name + '!')
-
