@@ -25,3 +25,4 @@ Let's try again, {name}!''')
             return print(f'''"{answer}" is wrong answer ;(. Correct answer was "no".
 Let's try again, {name}!''')
     print(f'Congratulations, {name}!')
+    return
