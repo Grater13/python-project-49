@@ -19,9 +19,7 @@ def brain_prime():
         print('Question: ' + str(number))
         answer = prompt.string('Your answer: ')
 
-        if counter <= 1 and answer == 'yes':
-            print('Correct!')
-        elif counter > 1 and answer == 'no':
+        if counter <= 1 and answer == 'yes' or counter > 1 and answer == 'no':
             print('Correct!')
         elif counter <= 1 and answer != 'yes':
             print(f"""'{answer}' is wrong answer ;(. Correct answer was 'yes'.
