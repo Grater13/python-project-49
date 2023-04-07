@@ -14,13 +14,15 @@ def brain_calc():
         number1 = randint(1, 10)
         number2 = randint(1, 10)
         given_number = f'{number1} {choice(expression)} {number2}'
-        crct_ans = eval(given_number)
+        right = eval(given_number)
         print('Question: ' + str(given_number))
         ans = prompt.string('Your answer: ')
 
-        if ans == str(crct_ans):
+        if ans == str(right):
             print('Correct!')
 
-        else: return print(f"""'{ans}' is wrong answer ;(. Correct answer was '{crct_ans}'.
-Let's try again, {name}!""")
+        else:
+            print(f"'{ans}' is wrong answer ;(. Correct answer was '{right}'.")
+            print(f"Let's try again, {name}!")
+            return
     print(f'Congratulations, {name}!')

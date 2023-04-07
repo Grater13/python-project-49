@@ -24,9 +24,11 @@ def brain_prime():
         elif counter > 1 and answer == 'no':
             print('Correct!')
         elif counter <= 1 and answer != 'yes':
-            return print(f"""'{answer}' is wrong answer ;(. Correct answer was 'yes'.
+            print(f"""'{answer}' is wrong answer ;(. Correct answer was 'yes'.
 Let's try again, {name}!""")
+            return
         elif counter > 1 and answer != 'no':
-            return print(f"""'{answer}' is wrong answer ;(. Correct answer was 'no'.
+            print(f"""'{answer}' is wrong answer ;(. Correct answer was 'no'.
 Let's try again, {name}!""")
+            return
     print(f'Congratulations, {name}!')

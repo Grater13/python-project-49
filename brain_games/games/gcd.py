@@ -12,11 +12,13 @@ def brain_gcd():
     for i in range(3):
         number1 = randint(1, 10)
         number2 = randint(1, 10)
-        max_div = gcd(number1, number2)
+        m_div = gcd(number1, number2)
         print('Question: ' + str(number1) + ' ' + str(number2))
-        answer = prompt.string('Your answer: ')
-        if str(max_div) == answer:
+        ans = prompt.string('Your answer: ')
+        if str(m_div) == ans:
             print('Correct!')
-        else: return print(f"""'{answer}' is wrong answer ;(. Correct answer was '{max_div}'.
-Let's try again, {name}!""")
+        else:
+            print(f"'{ans}' is wrong answer ;(. Correct answer was '{m_div}'.")
+            print(f"Let's try again, {name}!")
+            return
     print('Congratulations, ' + name + '!')

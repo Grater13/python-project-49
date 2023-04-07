@@ -20,13 +20,15 @@ def brain_progression():
             list.append(current)
 
         random_position = randint(0, 9)
-        random_num = list[random_position]
+        r_num = list[random_position]
         list[random_position] = '..'
 
         print('Question: ' + ' '.join(map(str, list)))
-        answer = prompt.string('Your answer: ')
-        if answer == str(random_num):
+        ans = prompt.string('Your answer: ')
+        if ans == str(r_num):
             print('Correct!')
-        else: return print(f"""'{answer}' is wrong answer ;(. Correct answer was '{random_num}'.
+        else:
+            print(f"""'{ans}' is wrong answer ;(. Correct answer was '{r_num}'.
 Let's try again, {name}!""")
+            return
     print(f'Congratulations, {name}!')

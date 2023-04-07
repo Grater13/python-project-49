@@ -19,9 +19,11 @@ def brain_even():
             print('Correct!')
 
         elif number % 2 == 0 and answer != 'yes':
-            return print(f'''"{answer}" is wrong answer ;(. Correct answer was "yes".
+            print(f'''"{answer}" is wrong answer ;(. Correct answer was "yes".
 Let's try again, {name}!''')
+            return
         elif number % 2 != 0 and answer != 'no':
-            return print(f'''"{answer}" is wrong answer ;(. Correct answer was "no".
+            print(f'''"{answer}" is wrong answer ;(. Correct answer was "no".
 Let's try again, {name}!''')
+            return
     print(f'Congratulations, {name}!')
