@@ -2,7 +2,7 @@ import prompt
 from random import randint
 
 
-def main():
+def even():
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print('Hello, ' + name + '!')
@@ -19,7 +19,9 @@ def main():
             print('Correct!')
 
         elif number % 2 == 0 and answer != 'yes':
-            return print('"' + answer + '"' + " is wrong answer ;(. Correct answer was \"yes\".\nLet's try again, " + name + "!")
+            return print(f'''"{answer}" is wrong answer ;(. Correct answer was "yes".
+Let's try again, {name}!''')
         elif number % 2 != 0 and answer != 'no':
-            return print('"' + answer + '"' + " is wrong answer ;(. Correct answer was \"no\".\nLet's try again, " + name + "!")
-    print('Congratulations, ' + name + '!')
+            return print(f'''"{answer}" is wrong answer ;(. Correct answer was "no".
+Let's try again, {name}!''')
+    print(f'Congratulations, {name}!')

@@ -2,7 +2,7 @@ import prompt
 from random import randint
 
 
-def main():
+def prog():
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print('Hello, ' + name + '!')
@@ -27,5 +27,6 @@ def main():
         answer = prompt.string('Your answer: ')
         if answer == str(random_num):
             print('Correct!')
-        else: return print("'" + str(answer) + "'" + 'is wrong answer ;(. Correct answer was ' + "'" + str(random_num) + "'.\nLet's try again, " + name + "!")
-    print('Congratulations, ' + name + '!')
+        else: return print(f"""'{answer}' is wrong answer ;(. Correct answer was '{random_num}'.
+Let's try again, {name}!""")
+    print(f'Congratulations, {name}!')

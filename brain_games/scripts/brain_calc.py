@@ -13,13 +13,14 @@ def main():
         expression = ['+', '-', '*']
         number1 = randint(1, 10)
         number2 = randint(1, 10)
-        given_number = str(number1) + ' ' + str(choice(expression)) + ' ' + str(number2)
-        correct_answer = eval(given_number)
+        given_number = f'{number1} {choice(expression)} {number2}'
+        crct_ans = eval(given_number)
         print('Question: ' + str(given_number))
-        answer = prompt.string('Your answer: ')
+        ans = prompt.string('Your answer: ')
 
-        if answer == str(correct_answer):
+        if ans == str(crct_ans):
             print('Correct!')
 
-        else: return print("'" + str(answer) + "'" + "is wrong answer ;(. Correct answer was " + "'" + str(correct_answer) + "'.\nLet's try again, " + name + "!")
-    print('Congratulations, ' + name + '!')
+        else: return print(f"""'{ans}' is wrong answer ;(. Correct answer was '{crct_ans}'.
+Let's try again, {name}!""")
+    print(f'Congratulations, {name}!')

@@ -2,7 +2,7 @@ import prompt
 from random import randint
 
 
-def main():
+def prime():
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print('Hello, ' + name + '!')
@@ -23,8 +23,10 @@ def main():
             print('Correct!')
         elif counter > 1 and answer == 'no':
             print('Correct!')
-        elif counter <= 1 and answer == 'no':
-            return print('"' + answer + '"' + " is wrong answer ;(. Correct answer was \"yes\".\nLet's try again, " + name + "!")
-        elif counter > 1 and answer == 'yes':
-            return print('"' + answer + '"' + " is wrong answer ;(. Correct answer was \"no\".\nLet's try again, " + name + "!")
-    print('Congratulations, ' + name + '!')
+        elif counter <= 1 and answer != 'yes':
+            return print(f"""'{answer}' is wrong answer ;(. Correct answer was 'yes'.
+Let's try again, {name}""")
+        elif counter > 1 and answer != 'no':
+            return print(f"""'{answer}' is wrong answer ;(. Correct answer was 'no'.
+Let's try again, {name}""")
+    print(f'Congratulations, {name}!')
