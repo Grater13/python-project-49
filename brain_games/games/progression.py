@@ -30,4 +30,3 @@ def brain_progression():
         else: return print(f"""'{answer}' is wrong answer ;(. Correct answer was '{random_num}'.
 Let's try again, {name}!""")
     print(f'Congratulations, {name}!')
-    return

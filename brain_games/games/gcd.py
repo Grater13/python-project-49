@@ -20,4 +20,3 @@ def brain_gcd():
         else: return print(f"""'{answer}' is wrong answer ;(. Correct answer was '{max_div}'.
 Let's try again, {name}!""")
     print('Congratulations, ' + name + '!')
-    return

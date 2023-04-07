@@ -24,4 +24,3 @@ def brain_calc():
         else: return print(f"""'{ans}' is wrong answer ;(. Correct answer was '{crct_ans}'.
 Let's try again, {name}!""")
     print(f'Congratulations, {name}!')
-    return
