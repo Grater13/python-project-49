@@ -12,13 +12,8 @@ def brain_even():
         number = randint(1, 100)
         print('Question: ' + str(number))
         answer = prompt.string('Your answer: ')
-        if number % 2 == 0 and answer == 'yes':
-            print('Correct!')
 
-        elif number % 2 != 0 and answer == 'no':
-            print('Correct!')
-
-        elif number % 2 == 0 and answer != 'yes':
+        if number % 2 == 0 and answer != 'yes':
             print(f'''"{answer}" is wrong answer ;(. Correct answer was "yes".
 Let's try again, {name}!''')
             return
@@ -26,4 +21,6 @@ Let's try again, {name}!''')
             print(f'''"{answer}" is wrong answer ;(. Correct answer was "no".
 Let's try again, {name}!''')
             return
+        else:
+            print('Correct!')
     print(f'Congratulations, {name}!')
