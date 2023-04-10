@@ -3,7 +3,7 @@
 
 <a href="https://codeclimate.com/github/Grater13/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/fa007622942f108085ce/maintainability" /></a>
 
-[![asciicast](https://asciinema.org/a/iN5StSjar4Ku0EX8RIxpfaRKy.svg)](https://asciinema.org/a/iN5StSjar4Ku0EX8RIxpfaRKy)
+<a href="https://asciinema.org/a/iN5StSjar4Ku0EX8RIxpfaRKy" target="_blank"><img src="https://asciinema.org/a/iN5StSjar4Ku0EX8RIxpfaRKy.svg" /></a>
 
 Asciinema brain-calc - https://asciinema.org/a/IBSc294rJyBonRBneNBa2WZtL
 
