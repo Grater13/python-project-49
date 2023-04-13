@@ -1,5 +1,4 @@
 from random import randint
-from brain_games import engine
 
 test = 'What number is missing in the progression?'
 
@@ -20,7 +19,3 @@ def game_logic():
     list[random_position] = '..'
     question = ' '.join(map(str, list))
     return question, answer
-
-
-def start():
-    engine.game_engine(game_logic, test)
