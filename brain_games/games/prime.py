@@ -1,6 +1,6 @@
 from random import randint
 
-test = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+TEST = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def game_logic():

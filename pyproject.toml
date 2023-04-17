@@ -6,6 +6,9 @@ authors = ["Your Name <you@example.com>"]
 readme = "README.md"
 packages = [{include = "brain_games"}]
 repository = "https://github.com/Grater13/python-project-49"
+classifiers = [
+    "Programming language :: Python :: 3",
+    "Operating system :: Arch Linux Endeavour OS"]
 
 [tool.poetry.dependencies]
 python = "^3.10"

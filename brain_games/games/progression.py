@@ -1,6 +1,6 @@
 from random import randint
 
-test = 'What number is missing in the progression?'
+TEST = 'What number is missing in the progression?'
 
 
 def game_logic():

@@ -1,6 +1,6 @@
 from random import randint
 
-test = 'Answer "yes" if the number is even, otherwise answer "no".'
+TEST = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def game_logic():
