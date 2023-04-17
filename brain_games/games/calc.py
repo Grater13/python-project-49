@@ -9,5 +9,5 @@ def game_logic():
     number1 = randint(1, 10)
     number2 = randint(1, 10)
     question = f'{number1} {choice(expression)} {number2}'
-    answer = str(eval(question))
-    return question, answer
+    answer = eval(question)
+    return question, str(answer)

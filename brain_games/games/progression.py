@@ -18,4 +18,4 @@ def game_logic():
     answer = list[random_position]
     list[random_position] = '..'
     question = ' '.join(map(str, list))
-    return question, answer
+    return question, str(answer)

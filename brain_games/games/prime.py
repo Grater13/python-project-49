@@ -11,4 +11,4 @@ def game_logic():
         if question % n == 0:
             counter += 1
         answer = 'yes' if counter <= 1 else 'no'
-    return question, answer
+    return str(question), answer

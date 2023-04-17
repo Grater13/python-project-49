@@ -9,4 +9,4 @@ def game_logic():
     number2 = randint(1, 10)
     question = str(number1) + ' ' + str(number2)
     answer = gcd(number1, number2)
-    return question, answer
+    return question, str(answer)

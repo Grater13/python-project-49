@@ -10,10 +10,10 @@ def game_engine(game_logic, TEST):
 
     for i in range(3):
         question, answer = game_logic()
-        print('Question: ' + str(question))
+        print('Question: ' + question)
         user_answer = prompt.string('Your answer: ')
 
-        if str(user_answer) != str(answer):
+        if user_answer != str(answer):
             print(f'''"{user_answer}" is wrong answer ;(. \
 Correct answer was "{answer}".
 Let's try again, {name}!''')
