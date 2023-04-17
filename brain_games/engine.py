@@ -13,7 +13,7 @@ def game_engine(game_logic, TEST):
         print('Question: ' + question)
         user_answer = prompt.string('Your answer: ')
 
-        if user_answer != str(answer):
+        if user_answer != answer:
             print(f'''"{user_answer}" is wrong answer ;(. \
 Correct answer was "{answer}".
 Let's try again, {name}!''')
