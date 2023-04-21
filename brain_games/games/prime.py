@@ -7,7 +7,7 @@ RANGE_END = 100
 
 def is_prime(number):
     counter = 0
-    for n in range(1, int(number / 2)):
+    for n in range(1, number):
         if number % n == 0:
             counter += 1
     return counter <= 1
