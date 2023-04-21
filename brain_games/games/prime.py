@@ -1,8 +1,8 @@
 from random import randint
 
 TEST = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-START_OF_THE_RANGE = 2
-END_OF_THE_RANGE = 100
+RANGE_START = 2
+RANGE_END = 100
 
 
 def is_prime(number):
@@ -14,6 +14,6 @@ def is_prime(number):
 
 
 def question_answer_return():
-    question = randint(START_OF_THE_RANGE, END_OF_THE_RANGE)
+    question = randint(RANGE_START, RANGE_END)
     answer = 'yes' if is_prime(question) else 'no'
     return str(question), answer
