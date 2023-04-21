@@ -1,15 +1,16 @@
 import prompt
 
 
-def game_engine(game_logic, TEST):
+def game_start(game):
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print('Hello, ' + name + '!')
 
-    print(TEST)
+    print(game.TEST)
+    NUMBER_OF_ROUNDS = 3
 
-    for i in range(3):
-        question, answer = game_logic()
+    for i in range(NUMBER_OF_ROUNDS):
+        question, answer = game.question_answer_return()
         print('Question: ' + question)
         user_answer = prompt.string('Your answer: ')
 
