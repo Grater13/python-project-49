@@ -4,6 +4,7 @@ TEST = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 START_OF_THE_RANGE = 2
 END_OF_THE_RANGE = 100
 
+
 def is_prime(number):
     counter = 0
     for n in range(1, int(number / 2)):
