@@ -3,12 +3,12 @@ import prompt
 NUMBER_OF_ROUNDS = 3
 
 
-def game_start(game):
+def run(game):
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print('Hello, ' + name + '!')
 
-    print(game.TEST)
+    print(game.RULE)
 
     for i in range(NUMBER_OF_ROUNDS):
         question, answer = game.question_answer_return()

@@ -1,6 +1,6 @@
 from random import randint
 
-TEST = 'Answer "yes" if the number is even, otherwise answer "no".'
+RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
 START_OF_THE_RANGE = 1
 END_OF_THE_RANGE = 100
 

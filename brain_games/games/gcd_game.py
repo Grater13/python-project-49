@@ -1,7 +1,7 @@
 from random import randint
 from math import gcd
 
-TEST = 'Find the greatest common divisor of given numbers.'
+RULE = 'Find the greatest common divisor of given numbers.'
 START_OF_THE_RANGE = 1
 END_OF_THE_RANGE = 10
 

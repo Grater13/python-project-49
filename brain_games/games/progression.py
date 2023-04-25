@@ -1,38 +1,36 @@
 from random import randint
+from random import choice
 
-TEST = 'What number is missing in the progression?'
-POSITIONS_IN_LINE = 11
+RULE = 'What number is missing in the progression?'
 RANGE_START = 2
 INITIAL_ELEM_RANGE_END = 60
-COMMON_DIFF_RANGE_END = 6
+COMMON_DIFFERENCE_RANGE_END = 6
 
 
-def progression_line():
-    initial_element = randint(RANGE_START, INITIAL_ELEM_RANGE_END)
-    common_difference = randint(RANGE_START, COMMON_DIFF_RANGE_END)
-    previous_element = initial_element
+def prog_line(initial_element, common_difference):
+    POSITIONS_IN_LINE = 11
+    previous = initial_element
     line = []
+
     for n in range(POSITIONS_IN_LINE):
-        current_element = previous_element + common_difference
-        previous_element = current_element
-        line.append(current_element)
+        current = previous + common_difference
+        previous = current
+        line.append(current)
     return line
 
 
-HID_ELEM_POS_START = 0
-HID_ELEM_POS_END = 9
-
-
-def question_string():
-    line = progression_line()
-    random_position = randint(HID_ELEM_POS_START, HID_ELEM_POS_END)
-    hidden_number = line[random_position]
-    line[random_position] = '..'
+def question_string(line):
+    random_number = choice(line)
+    number_index = line.index(random_number)
+    line[number_index] = '..'
     question = ' '.join(map(str, line))
-    return question, hidden_number
+    return question, random_number
 
 
 def question_answer_return():
-    question, hidden_number = question_string()
-    answer = str(hidden_number)
+    question, random_number = question_string(
+        prog_line(
+            randint(RANGE_START, INITIAL_ELEM_RANGE_END),
+            randint(RANGE_START, COMMON_DIFFERENCE_RANGE_END)))
+    answer = str(random_number)
     return question, answer

@@ -1,7 +1,7 @@
 from random import randint
 from random import choice
 
-TEST = 'What is the result of the expression?'
+RULE = 'What is the result of the expression?'
 START_OF_THE_RANGE = 1
 END_OF_THE_RANGE = 10
 
