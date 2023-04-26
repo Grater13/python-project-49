@@ -5,14 +5,13 @@ RULE = 'What number is missing in the progression?'
 RANGE_START = 2
 INITIAL_ELEM_RANGE_END = 60
 COMMON_DIFFERENCE_RANGE_END = 6
+POSITIONS_IN_LINE = 11
 
-
-def prog_line(initial_element, common_difference):
-    POSITIONS_IN_LINE = 11
+def prog_line(initial_element, common_difference, positions_in_line):
     previous = initial_element
     line = []
 
-    for n in range(POSITIONS_IN_LINE):
+    for n in range(positions_in_line):
         current = previous + common_difference
         previous = current
         line.append(current)
@@ -28,9 +27,9 @@ def question_string(line):
 
 
 def question_answer_return():
+    initial_element = randint(RANGE_START, INITIAL_ELEM_RANGE_END)
+    common_difference = randint(RANGE_START, COMMON_DIFFERENCE_RANGE_END)
     question, random_number = question_string(
-        prog_line(
-            randint(RANGE_START, INITIAL_ELEM_RANGE_END),
-            randint(RANGE_START, COMMON_DIFFERENCE_RANGE_END)))
+        prog_line(initial_element, common_difference, positions_in_line))
     answer = str(random_number)
     return question, answer
