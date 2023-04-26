@@ -7,6 +7,7 @@ INITIAL_ELEM_RANGE_END = 60
 COMMON_DIFFERENCE_RANGE_END = 6
 POSITIONS_IN_LINE = 11
 
+
 def prog_line(initial_element, common_difference, positions_in_line):
     previous = initial_element
     line = []
@@ -30,6 +31,6 @@ def question_answer_return():
     initial_element = randint(RANGE_START, INITIAL_ELEM_RANGE_END)
     common_difference = randint(RANGE_START, COMMON_DIFFERENCE_RANGE_END)
     question, random_number = question_string(
-        prog_line(initial_element, common_difference, positions_in_line))
+        prog_line(initial_element, common_difference, POSITIONS_IN_LINE))
     answer = str(random_number)
     return question, answer
