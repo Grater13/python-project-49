@@ -27,7 +27,7 @@ def question_string(line):
     return question, random_number
 
 
-def question_answer_return():
+def get_round():
     initial_element = randint(RANGE_START, INITIAL_ELEM_RANGE_END)
     common_difference = randint(RANGE_START, COMMON_DIFFERENCE_RANGE_END)
     question, random_number = question_string(

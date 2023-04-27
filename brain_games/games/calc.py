@@ -6,7 +6,7 @@ START_OF_THE_RANGE = 1
 END_OF_THE_RANGE = 10
 
 
-def question_answer_return():
+def get_round():
     expression = ['+', '-', '*']
     number1 = randint(START_OF_THE_RANGE, END_OF_THE_RANGE)
     number2 = randint(START_OF_THE_RANGE, END_OF_THE_RANGE)

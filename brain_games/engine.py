@@ -11,7 +11,7 @@ def run(game):
     print(game.RULE)
 
     for i in range(NUMBER_OF_ROUNDS):
-        question, answer = game.question_answer_return()
+        question, answer = game.get_round()
         print('Question: ' + question)
         user_answer = prompt.string('Your answer: ')
 

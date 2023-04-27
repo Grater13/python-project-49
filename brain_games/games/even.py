@@ -9,7 +9,7 @@ def is_even(number):
     return number % 2 == 0
 
 
-def question_answer_return():
+def get_round():
     question = randint(START_OF_THE_RANGE, END_OF_THE_RANGE)
     answer = 'yes' if is_even(question) else 'no'
     return str(question), answer

@@ -14,7 +14,7 @@ def is_prime(number):
     return True
 
 
-def question_answer_return():
+def get_round():
     question = randint(RANGE_START, RANGE_END)
     answer = 'yes' if is_prime(question) else 'no'
     return str(question), answer
